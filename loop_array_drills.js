@@ -1,6 +1,6 @@
 'use strict';
 
-// max and min (with WHILE loop)
+// Max and Min (with WHILE loop)
 
 function max(numbers) {
     let currentMax = numbers[0];
@@ -31,6 +31,17 @@ function min(numbers) {
         i++;
     }
     return currentMin;
+}
+
+// Compute the average with .forEach()
+
+function average(numbers) {
+    let sum = 0;
+    numbers.forEach(function(arrNum) {
+       sum = arrNum += sum;
+    }); 
+    let arrAvg = sum/numbers.length;
+    return arrAvg; 
 }
 
 
